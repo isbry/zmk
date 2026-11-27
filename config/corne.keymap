@@ -95,7 +95,7 @@
         &kp LA(Q)      &kp LA(W)      &kp LA(E)       &kp LA(R)       &kp LA(T)        &kp LA(Y)       &none           &kp LA(I)       &kp LA(O)      &kp LA(P)
         &kp LA(A)      &kp LA(S)      &wmod LCTRL LA(D) &wmod LSHIFT LA(F) &kp LA(G)   &kp LA(H)       &kp LA(J)       &kp LA(K)       &kp LA(L)      &kp LS(LA(N0))
         &kp LA(Z)      &kp LA(X)      &bootloader     &studio_unlock  &kp LA(B)        &kp LA(N)       &kp LA(N1)      &kp LA(N2)      &kp LA(N3)     &kp LA(N4)
-                                      &kp LA(SPACE)   &trans          &kp LA(TAB)      &kp LA(RET)     &kp LA(GRAVE)   &none
+                                      &none           &trans          &kp LA(TAB)      &kp LA(RET)     &kp LA(GRAVE)   &kp LA(SPACE)
       >;
     };
 
