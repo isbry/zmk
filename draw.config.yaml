@@ -31,7 +31,7 @@ layers:
   - ','
   - .
   - /
-  - ESC
+  - {t: ESC, h: Nav}
   - {t: SPACE, h: WM}
   - {t: TAB, h: Num}
   - {t: RET, h: Sym}
@@ -185,3 +185,40 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
+  Nav:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - LGUI
+  - LALT
+  - LCTRL
+  - LSHIFT
+  - ''
+  - ←
+  - ↓
+  - ↑
+  - →
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
