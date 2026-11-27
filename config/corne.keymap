@@ -122,9 +122,9 @@
     func_layer {
       display-name = "Func";
       bindings = <
-        &kp F12        &kp F7         &kp F8          &kp F9          &none            &none           &none           &kp C_BRI_DN    &kp C_BRI_UP   &none
-        &kp F11        &kp F4         &kp F5          &kp F6          &none            &none           &kp C_PREV      &kp C_VOL_DN    &kp C_VOL_UP   &kp C_NEXT
-        &kp F10        &kp F1         &kp F2          &kp F3          &none            &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_NXT     &bt BT_CLR
+        &kp F12        &kp F7         &kp F8          &kp F9          &bootloader      &bootloader     &none           &kp C_BRI_DN    &kp C_BRI_UP   &none
+        &kp F11        &kp F4         &kp F5          &kp F6          &sys_reset       &sys_reset      &kp C_PREV      &kp C_VOL_DN    &kp C_VOL_UP   &kp C_NEXT
+        &kp F10        &kp F1         &kp F2          &kp F3          &studio_unlock   &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_NXT     &bt BT_CLR
                                       &kp C_MUTE      &kp C_PP        &kp C_STOP       &trans          &trans          &trans
       >;
     };

@@ -153,8 +153,8 @@ layers:
   - F7
   - F8
   - F9
-  - ''
-  - ''
+  - bootloader
+  - bootloader
   - ''
   - BRI DN
   - BRI UP
@@ -163,8 +163,8 @@ layers:
   - F4
   - F5
   - F6
-  - ''
-  - ''
+  - reset
+  - reset
   - PREV
   - VOL DN
   - VOL UP
@@ -173,7 +173,7 @@ layers:
   - F1
   - F2
   - F3
-  - ''
+  - studio unlock
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
   - {t: BT, h: '2'}
