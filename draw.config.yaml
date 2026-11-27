@@ -31,8 +31,8 @@ layers:
   - ','
   - .
   - /
-  - {t: ESC, h: WM}
-  - {t: SPACE, h: Nav}
+  - {t: ESC, h: Nav}
+  - {t: SPACE, h: WM}
   - {t: TAB, h: Num}
   - {t: RET, h: Sym}
   - BSPC
@@ -68,8 +68,8 @@ layers:
   - PG UP
   - END
   - INS
-  - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -216,8 +216,8 @@ layers:
   - {t: space 2, h: ⌥2}
   - {t: space 3, h: ⌥3}
   - {t: space 4, h: ⌥4}
-  - {type: held}
   - {t: bsp/stack, h: ⌥Space}
+  - {type: held}
   - {t: display, h: ⌥Tab}
   - {t: terminal, h: ⌥Ret}
   - {t: scratch, h: ⇧ notes}

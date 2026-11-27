@@ -71,6 +71,16 @@
       quick-tap-ms = <175>;
       bindings = <&mo>, <&kp>;
     };
+
+    space_wm: space_window_manager {
+      compatible = "zmk,behavior-hold-tap";
+      #binding-cells = <2>;
+      flavor = "balanced";
+      tapping-term-ms = <200>;
+      quick-tap-ms = <175>;
+      require-prior-idle-ms = <150>;
+      bindings = <&mo>, <&kp>;
+    };
   };
 
   keymap {
@@ -82,7 +92,7 @@
         &kp Q          &kp W          &kp E           &kp R           &kp T            &kp Y           &kp U           &kp I           &kp O          &kp P
         &hml LGUI A    &hml LALT S    &hml LCTRL D    &hml LSHIFT F   &kp G            &kp H           &hmr RSHIFT J   &hmr RCTRL K    &hmr RALT L    &hmr RGUI SEMI
         &kp Z          &kp X          &kp C           &kp V           &kp B            &kp N           &kp M           &kp COMMA       &kp DOT        &kp FSLH
-                                      &thumb WM ESC   &thumb NAV SPACE &thumb NUM TAB  &thumb SYM RET  &kp BSPC        &thumb FUNC DEL
+                                      &thumb NAV ESC  &space_wm WM SPACE &thumb NUM TAB  &thumb SYM RET  &kp BSPC        &thumb FUNC DEL
       >;
     };
 
@@ -132,7 +142,7 @@
         &kp LA(Q)      &kp LA(W)      &kp LA(E)       &kp LA(R)       &kp LA(T)        &kp LA(Y)       &none           &kp LA(I)       &kp LA(O)      &kp LA(P)
         &kp LA(A)      &kp LA(S)      &wmod LCTRL LA(D) &wmod LSHIFT LA(F) &none       &kp LA(H)       &kp LA(J)       &kp LA(K)       &kp LA(L)      &kp LS(LA(N0))
         &kp LA(Z)      &kp LA(X)      &none           &none           &kp LA(B)        &kp LA(N)       &kp LA(N1)      &kp LA(N2)      &kp LA(N3)     &kp LA(N4)
-                                      &trans          &kp LA(SPACE)   &kp LA(TAB)      &kp LA(RET)     &kp LA(GRAVE)   &none
+                                      &kp LA(SPACE)   &trans          &kp LA(TAB)      &kp LA(RET)     &kp LA(GRAVE)   &none
       >;
     };
   };
