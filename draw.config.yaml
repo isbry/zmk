@@ -1,4 +1,4 @@
-layout: {qmk_keyboard: corne_rotated, layout_name: LAYOUT_split_3x5_3}
+layout: {zmk_keyboard: corne, layout_name: foostan_corne_5col_layout}
 layers:
   Base:
   - Q
@@ -11,16 +11,16 @@ layers:
   - I
   - O
   - P
-  - {t: A, h: $$phosphor:regular/command$$}
-  - {t: S, h: $$phosphor:regular/option$$}
-  - {t: D, h: $$phosphor:regular/control$$}
-  - {t: F, h: $$phosphor:regular/arrow-fat-up$$}
+  - {t: A, h: LGUI}
+  - {t: S, h: LALT}
+  - {t: D, h: LCTRL}
+  - {t: F, h: LSHIFT}
   - G
   - H
-  - {t: J, h: $$phosphor:regular/arrow-fat-up$$}
-  - {t: K, h: $$phosphor:regular/control$$}
-  - {t: L, h: $$phosphor:regular/option$$}
-  - {t: ;, h: $$phosphor:regular/command$$}
+  - {t: J, h: RSHIFT}
+  - {t: K, h: RCTRL}
+  - {t: L, h: RALT}
+  - {t: ;, h: RGUI}
   - Z
   - X
   - C
@@ -28,14 +28,14 @@ layers:
   - B
   - N
   - M
-  - ', <'
-  - '. >'
-  - '/ ?'
-  - {t: ESC, h: Media}
-  - {t: $$mdi:keyboard-space$$, h: Nav}
+  - ','
+  - .
+  - /
+  - {t: ESC, h: WM}
+  - {t: SPACE, h: Nav}
   - {t: TAB, h: Num}
-  - {t: $$material:keyboard_return$$, h: Sym}
-  - $$phosphor:regular/backspace$$
+  - {t: RET, h: Sym}
+  - BSPC
   - {t: DEL, h: Func}
   Nav:
   - ''
@@ -43,31 +43,31 @@ layers:
   - ''
   - ''
   - ''
-  - REDO
-  - PASTE
-  - COPY
-  - CUT
-  - UNDO
-  - $$phosphor:regular/command$$
-  - $$phosphor:regular/option$$
-  - $$phosphor:regular/control$$
-  - $$phosphor:regular/arrow-fat-up$$
+  - redo
+  - paste
+  - copy
+  - cut
+  - undo
+  - LGUI
+  - LALT
+  - LCTRL
+  - LSHIFT
   - ''
-  - CAPS
-  - $$phosphor:regular/arrow-left$$
-  - $$phosphor:regular/arrow-down$$
-  - $$phosphor:regular/arrow-up$$
-  - $$phosphor:regular/arrow-right$$
-  - ''
-  - ''
+  - LEFT
+  - DOWN
+  - UP
+  - RIGHT
+  - caps word
   - ''
   - ''
   - ''
-  - INS
+  - ''
+  - ''
   - HOME
   - PG DN
   - PG UP
   - END
+  - INS
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
@@ -81,30 +81,30 @@ layers:
   - ''
   - ''
   - /
-  - 7
-  - 8
-  - 9
+  - '7'
+  - '8'
+  - '9'
   - '*'
-  - $$phosphor:regular/command$$
-  - $$phosphor:regular/option$$
-  - $$phosphor:regular/control$$
-  - $$phosphor:regular/arrow-fat-up$$
+  - LGUI
+  - LALT
+  - LCTRL
+  - LSHIFT
   - ''
   - '-'
-  - 4
-  - 5
-  - 6
+  - '4'
+  - '5'
+  - '6'
   - +
   - ''
   - ''
   - ''
   - ''
   - ''
-  - 0
-  - 1
-  - 2
-  - 3
-  - ''
+  - '0'
+  - '1'
+  - '2'
+  - '3'
+  - .
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
@@ -117,31 +117,31 @@ layers:
   - '['
   - ']'
   - '|'
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - '&'
+  - '*'
+  - <
+  - '>'
+  - \
   - '#'
   - $
   - (
   - )
   - '`'
   - ''
-  - $$phosphor:regular/arrow-fat-up$$
-  - $$phosphor:regular/control$$
-  - $$phosphor:regular/option$$
-  - $$phosphor:regular/command$$
+  - RSHIFT
+  - RCTRL
+  - RALT
+  - RGUI
   - '%'
   - ^
   - '{'
   - '}'
   - '~'
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - _
+  - '='
+  - +
+  - '"'
+  - ':'
   - {t: ▽, type: trans}
   - '-'
   - ''''
@@ -153,72 +153,72 @@ layers:
   - F7
   - F8
   - F9
-  - PSCRN
   - ''
   - ''
   - ''
-  - ''
+  - BRI DN
+  - BRI UP
   - ''
   - F11
   - F4
   - F5
   - F6
-  - SLCK
   - ''
-  - $$phosphor:regular/arrow-fat-up$$
-  - $$phosphor:regular/control$$
-  - $$phosphor:regular/option$$
-  - $$phosphor:regular/command$$
+  - ''
+  - PREV
+  - VOL DN
+  - VOL UP
+  - NEXT
   - F10
   - F1
   - F2
   - F3
-  - PAUSE BREAK
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held}
-  Media:
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - $$phosphor:regular/sun-dim$$
-  - $$phosphor:regular/sun$$
-  - ''
-  - $$phosphor:regular/command$$
-  - $$phosphor:regular/option$$
-  - $$phosphor:regular/control$$
-  - $$phosphor:regular/arrow-fat-up$$
-  - ''
-  - ''
-  - $$phosphor:regular/skip-back$$
-  - $$phosphor:regular/speaker-low$$
-  - $$phosphor:regular/speaker-high$$
-  - $$phosphor:regular/skip-forward$$
-  - ''
-  - ''
-  - ''
-  - ''
   - ''
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
   - {t: BT, h: '2'}
   - BT NXT
   - BT CLR
+  - MUTE
+  - PP
+  - STOP
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - $$phosphor:regular/stop$$
-  - $$phosphor:regular/play-pause$$
-  - $$phosphor:regular/speaker-slash$$
+  WM:
+  - {t: close, h: ⌥Q}
+  - {t: wall, h: ⌥W}
+  - {t: split, h: ⌥E}
+  - {t: rotate, h: ⌥R}
+  - {t: float, h: ⌥T}
+  - {t: mirror y, h: ⌥Y}
+  - ''
+  - {t: inbox, h: ⌥I}
+  - {t: present, h: ⌥O}
+  - {t: stack ←, h: ⌥P}
+  - {t: hud, h: ⇧ agents}
+  - {t: slack, h: ⇧ shot}
+  - {t: palette, h: ⌃ resize}
+  - {t: zoom, h: ⇧ swap/send}
+  - ''
+  - {t: focus ←, h: ⌥H}
+  - {t: focus ↓, h: ⌥J}
+  - {t: focus ↑, h: ⌥K}
+  - {t: focus →, h: ⌥L}
+  - {t: balance, h: ⇧⌥0}
+  - {t: resize mode, h: ⌥Z}
+  - {t: mirror x, h: ⌥X}
+  - ''
+  - ''
+  - {t: browser, h: ⌥B}
+  - {t: stack →, h: ⌥N}
+  - {t: space 1, h: ⌥1}
+  - {t: space 2, h: ⌥2}
+  - {t: space 3, h: ⌥3}
+  - {t: space 4, h: ⌥4}
+  - {type: held}
+  - {t: bsp/stack, h: ⌥Space}
+  - {t: display, h: ⌥Tab}
+  - {t: terminal, h: ⌥Ret}
+  - {t: scratch, h: ⇧ notes}
+  - ''
