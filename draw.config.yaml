@@ -11,16 +11,16 @@ layers:
   - I
   - O
   - P
-  - {t: A, h: LGUI}
-  - {t: S, h: LALT}
-  - {t: D, h: LCTRL}
-  - {t: F, h: LSHIFT}
+  - {t: A, h: Cmd}
+  - {t: S, h: Alt}
+  - {t: D, h: Ctrl}
+  - {t: F, h: Shift}
   - G
   - H
-  - {t: J, h: RSHIFT}
-  - {t: K, h: RCTRL}
-  - {t: L, h: RALT}
-  - {t: ;, h: RGUI}
+  - {t: J, h: Shift}
+  - {t: K, h: Ctrl}
+  - {t: L, h: Alt}
+  - {t: ;, h: Cmd}
   - Z
   - X
   - C
@@ -31,12 +31,12 @@ layers:
   - ','
   - .
   - /
-  - {t: ESC, h: Nav}
+  - ESC
   - {t: SPACE, h: WM}
-  - {t: TAB, h: Num}
+  - {t: TAB, h: Nav}
   - {t: RET, h: Sym}
-  - BSPC
-  - {t: DEL, h: Func}
+  - {t: BSPC, h: Num}
+  - {t: '-', s: _}
   WM:
   - {t: close, h: ⌥Q}
   - {t: wall, h: ⌥W}
@@ -60,8 +60,8 @@ layers:
   - {t: balance, h: ⇧⌥0}
   - {t: resize mode, h: ⌥Z}
   - {t: mirror x, h: ⌥X}
-  - ''
-  - ''
+  - boot
+  - studio
   - {t: browser, h: ⌥B}
   - {t: stack →, h: ⌥N}
   - {t: space 1, h: ⌥1}
@@ -74,42 +74,42 @@ layers:
   - {t: terminal, h: ⌥Ret}
   - {t: scratch, h: ⇧ notes}
   - ''
-  Num:
+  Nav:
   - ''
   - ''
   - ''
   - ''
   - ''
-  - /
-  - '7'
-  - '8'
-  - '9'
-  - '*'
-  - LGUI
-  - LALT
-  - LCTRL
-  - LSHIFT
+  - PgUp
+  - Home
+  - ↑
+  - End
+  - VOL UP
+  - Cmd
+  - Alt
+  - Ctrl
+  - Shift
   - ''
-  - '-'
-  - '4'
-  - '5'
-  - '6'
-  - +
-  - ''
-  - ''
+  - PgDn
+  - ←
+  - ↓
+  - →
+  - VOL DN
   - ''
   - ''
   - ''
-  - '0'
-  - '1'
-  - '2'
-  - '3'
-  - .
+  - ''
+  - ''
+  - {t: BT, h: '0'}
+  - {t: BT, h: '1'}
+  - {t: BT, h: '2'}
+  - PP
+  - MUTE
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
-  - '='
   - {t: ▽, type: trans}
+  - DEL
   - {t: ▽, type: trans}
   Sym:
   - '!'
@@ -127,18 +127,18 @@ layers:
   - (
   - )
   - '`'
-  - ''
-  - RSHIFT
-  - RCTRL
-  - RALT
-  - RGUI
+  - '='
+  - Shift
+  - Ctrl
+  - Alt
+  - Cmd
   - '%'
   - ^
   - '{'
   - '}'
   - '~'
   - _
-  - '='
+  - ''
   - +
   - '"'
   - ':'
@@ -148,77 +148,40 @@ layers:
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  Func:
-  - F12
-  - F7
-  - F8
-  - F9
-  - bootloader
-  - bootloader
+  Num:
+  - /
+  - '7'
+  - '8'
+  - '9'
+  - '*'
   - ''
-  - BRI DN
-  - BRI UP
   - ''
-  - F11
-  - F4
-  - F5
-  - F6
-  - reset
-  - reset
-  - PREV
-  - VOL DN
-  - VOL UP
-  - NEXT
-  - F10
-  - F1
-  - F2
-  - F3
-  - studio unlock
-  - {t: BT, h: '0'}
-  - {t: BT, h: '1'}
-  - {t: BT, h: '2'}
-  - BT NXT
-  - BT CLR
-  - MUTE
-  - PP
-  - STOP
-  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - ''
+  - '-'
+  - '4'
+  - '5'
+  - '6'
+  - +
+  - ''
+  - Shift
+  - Ctrl
+  - Alt
+  - Cmd
+  - ''
+  - '1'
+  - '2'
+  - '3'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - .
+  - '0'
+  - '='
   - {t: ▽, type: trans}
   - {type: held}
-  Nav:
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - LGUI
-  - LALT
-  - LCTRL
-  - LSHIFT
-  - ''
-  - ←
-  - ↓
-  - ↑
-  - →
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
