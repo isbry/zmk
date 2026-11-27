@@ -52,7 +52,7 @@ layers:
   - {t: slack, h: ⇧ shot}
   - {t: palette, h: ⌃ resize}
   - {t: zoom, h: ⇧ swap/send}
-  - ''
+  - {t: keys, h: ⌥G}
   - {t: focus ←, h: ⌥H}
   - {t: focus ↓, h: ⌥J}
   - {t: focus ↑, h: ⌥K}
